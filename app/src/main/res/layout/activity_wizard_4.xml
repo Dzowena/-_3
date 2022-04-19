@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#682712"
+    tools:context=".WizardActivity4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:background="#70000000"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at placerat odio, a cursus turpis. Ut sodales purus ut libero fringilla tempor. Vestibulum semper tellus risus, vehicula fermentum neque bibendum ut. Praesent consectetur vel enim non suscipit. Cras porttitor odio risus, nec interdum velit vehicula pellentesque. Aenean ullamcorper, nunc vel elementum rhoncus, lacus odio mollis nisl, non interdum leo nisi at dui. Ut sed quam quis nisi tristique aliquet quis in metus. In hac habitasse platea dictumst. Maecenas pulvinar nulla at tincidunt eleifend. Fusce sollicitudin tellus feugiat orci interdum, nec fringilla massa mattis. Nulla ut pharetra lectus."
+                android:textColor="#9AFFFFFF"
+                android:textSize="17sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:text="I agree to the terms of service " />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/back_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="26dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#BD4520"
+                    android:paddingHorizontal="10dp"
+                    android:text="back"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/next_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="26dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#BD4520"
+                    android:enabled="false"
+                    android:paddingHorizontal="10dp"
+                    android:text="Next"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
